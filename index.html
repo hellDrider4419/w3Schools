@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>w3school.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="navbar">
+      <img class="logo" src="/images/download.png" />
+
+      <div class="left"><div class="item menu" id="menu-btn-4" onclick="mob_menu()">Menu<i class="fa fa-caret-down" id="down-icon-3"></i><i class="fa fa-caret-up" id="up-icon-3" style="display: none;"></i></div>
+        <div class="item tutorial" id="menu-btn-0" onclick="display_menu(0)">Tutorials<i class="fa fa-caret-down" id="down-icon-0"></i><i class="fa fa-caret-up" id="up-icon-0" style="display: none;"></i></div>
+        <div class="item references" id="menu-btn-1" onclick="display_menu(1)">References<i class="fa fa-caret-down" id="down-icon-1"></i><i class="fa fa-caret-up" id="up-icon-1" style="display: none;"></i></div>
+        <div class="item exercises" id="menu-btn-2" onclick="display_menu(2)">Exercises<i class="fa fa-caret-down" id="down-icon-2"></i><i class="fa fa-caret-up" id="up-icon-2" style="display: none;"></i></div>
+        <div class="item video">Video<span class="new">NEW</span>  </div>
+      </div>
+      <div class="right">
+        <i class="fas fa-adjust nav-icon" onclick="change_theme()"></i>
+        <i class="fas fa-globe-asia nav-icon"></i>
+        <i class="fas fa-search nav-icon"></i>
+        <div class="item website">
+          Website
+          <span class="new">NEW</span>
+        </div>
+        <div class="item paidcourses">Paid Courses</div>
+        <div class="item login">Log in</div>
+      </div>
+    </div>
+
+    <div class="menu-bar" id="menu-bar">
+      <div class="menu-padding" id="menu"> 
+      </div>
+    </div>
+    
+    <div class="mob-menu" id="mob-menu"><i class="fas fa-times mob-cancel" onclick="mob_menu(-1)"></i>
+
+      <h3 class="mob-item" id="mob-tutorial" onclick="mob_tutorial()">Tutorial <i class="fa fa-caret-down"></i></h3>
+      <div id="dropdown-menu-tutorial" class="dropdown-menu"></div>
+      <h3 class="mob-item" id="mob-references" onclick="mob_references()">References <i class="fa fa-caret-down"></i></h3>
+      <div id="dropdown-menu-references" class="dropdown-menu"></div>
+      <h3 class="mob-item" id="mob-exercises" onclick="mob_exercises()">Exercises <i class="fa fa-caret-down"></i></h3>
+      <div id="dropdown-menu-exercises" class="dropdown-menu"></div>
+      <h3 class="mob-item" id="mob-paid-courses">Paid Courses</h3>      
+      <h3 class="mob-item" id="mob-spaces">Spaces</h3>
+      <h3 class="mob-item" id="mob-videos">Videos</h3>
+      <h3 class="mob-item" id="mob-shop">Shop</h3>
+
+    </div>
+
+    <div class="lang-section html-sec">
+      <div class="lang-left sub-lang-section">
+        <p class="head-text white">HTML</p>
+        <p class="caption">The language for building web pages</p>
+        <div class="button btn-1">Learn HTML</div>
+        <div class="button btn-2">
+          Video Tutorials
+          <div class="new-rotate">NEW</div>
+        </div>
+        <div class="button btn-3">HTML References</div>
+      </div>
+      <div class="lang-right sub-lang-section">
+        <div class="editor">
+          <div class="inner-editor">
+            <div class="editor-head">HTML Example:</div>
+            <div class="textarea" >
+              <pre class="text">
+  <i class="blue">&lt</i><span class="brown">!DOCTYPE</span> <span class="red">html</span><i class="blue">&gt</i>
+  <i class="blue">&lt</i><span class="brown">html</span><i class="blue">&gt</i>
+  <i class="blue">&lt</i><span class="brown">title</span><i class="blue">&gt</i>HTML Tutorial<i class="blue">&lt</i><span class="brown">/title</span><i class="blue">&gt</i>
+  <i class="blue">&lt</i><span class="brown">body</span><i class="blue">&gt</i>
+
+  <i class="blue">&lt</i><span class="brown">h1</span><i class="blue">&gt</i>This is a heading<i class="blue">&lt</i><span class="brown">/h1</span><i class="blue">&gt</i>
+  <i class="blue">&lt</i><span class="brown">/p</span><i class="blue">&gt</i>This is a paragraph.<i class="blue">&lt</i><span class="brown">/p</span><i class="blue">&gt</i>
+
+  <i class="blue">&lt</i><span class="brown">/body</span><i class="blue">&gt</i>
+  <i class="blue">&lt</i><span class="brown">/html</span><i class="blue">&gt</i></pre
+              >
+            </div>
+            <div class="button btn-1">Try it yourself</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lang-section css-sec">
+      <div class="lang-left sub-lang-section">
+        <p class="head-text black">css</p>
+        <p class="caption black">The language for styling web pages</p>
+        <div class="button btn-1">Learn CSS</div>
+        <div class="button btn-4">CSS Reference</div>
+      </div>
+      <div class="lang-right sub-lang-section">
+        <div class="editor">
+          <div class="inner-editor">
+            <div class="editor-head">CSS Example:</div>
+            <div class="textarea" >
+              <pre class="text">
+<span class="brown">body</span> {
+  <span class="red">background-color</span>: <span class="blue">lightblue</span>;
+}              
+         
+<span class="brown">h1</span>{
+  <span class="red">color</span>: <span class="blue">white</span>;
+  <span class="red">text-align</span>: <span class="blue">center</span>;
+}
+</pre
+              >
+            </div>
+            <div class="button btn-1">Try it yourself</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lang-section js-sec">
+      <div class="lang-left sub-lang-section">
+        <p class="head-text black">JavaScript</p>
+        <p class="caption black">The language for programming web pages</p>
+        <div class="button btn-1">Learn JavaScript</div>
+        <div class="button btn-4">JavaScript Reference</div>
+      </div>
+      <div class="lang-right sub-lang-section">
+        <div class="editor">
+          <div class="inner-editor">
+            <div class="editor-head">JavaScript Example:</div>
+            <div class="textarea" >
+              <pre class="text">
+<i class="blue">&lt</i><span class="brown">button</span> <span class="red">onclick</span>=<span class="blue">"myFunction()"&gt</span>
+Click Me!<i class="blue">&lt</i><span class="brown">button</span><i class="blue">&gt</i>
+
+<i class="blue">&lt</i><span class="brown">script</span><i class="blue">&gt</i>
+<span class="blue">function</span> myFunction() {
+  <span class="blue">let</span> x = document.getElementById(<span class="brown">"demo"</span>);
+  x.style.fontSize = <span class="brown">"25px"</span>;
+  x.style.color = <span class="brown">"red"</span>;
+}
+<i class="blue">&lt</i><span class="brown">/script</span><i class="blue">&gt</i>
+</pre
+              >
+            </div>
+            <div class="button btn-1">Try it yourself</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lang-section python-sec">
+      <div class="lang-left sub-lang-section">
+        <p class="head-text white">Python</p>
+        <p class="caption">A popular programming language</p>
+        <div class="button btn-1">Learn Python</div>
+
+        <div class="button btn-3">Python References</div>
+      </div>
+      <div class="lang-right sub-lang-section">
+        <div class="editor">
+          <div class="inner-editor">
+            <div class="editor-head">Python Example:</div>
+            <div class="textarea" >
+              <pre class="text">
+<span class="blue">if</span> <span class="red">5</span> > <span class="red">2</span>:
+print(<span class="brown">"Five is greater than two!"</span>)
+
+
+</pre
+              >
+            </div>
+            <div class="button btn-1">Try it yourself</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lang-section css-sec">
+      <div class="lang-left sub-lang-section">
+        <p class="head-text black">SQL</p>
+        <p class="caption black">A language for accessing databases</p>
+        <div class="button btn-1">Learn SQL</div>
+        <div class="button btn-4">SQL Reference</div>
+      </div>
+      <div class="lang-right sub-lang-section">
+        <div class="editor">
+          <div class="inner-editor">
+            <div class="editor-head">SQL Example:</div>
+            <div class="textarea" >
+              <pre class="text">
+<span class="blue">SELECT</span> * <span class="blue">FROM</span> Customers
+<span class="blue">WHERE</span> Country=<span class="brown">'Mexico'</span>;
+
+
+
+</pre
+              >
+            </div>
+            <div class="button btn-1">Try it yourself</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-container" id="language-cards"></div>
+    <div class="bg-container">
+      <div class="sub-container"><div class="card-container" style="background-color:#96D4D4"><div class="flex">            <p class="lang-head-text black">W3.CSS</p><p class="lang-caption">A CSS framework for faster and better responsive web pages</p><div class="button-2 btn-4 mgbtm126" >Learn W3.CSS</div></div></div></div><div class="sub-container"><div class="card-container" style="background-color:#D9EEE1"><div class="flex">            <p class="lang-head-text black">Bootstrap</p><p class="lang-caption">A CSS framework for designing better web pages</p><div class="button-2 btn-4">Learn BS3</div><div class="button-2 btn-4">Learn BS4</div><div class="button-2 btn-4">Learn BS5</div></div></div></div>
+    </div>
+
+    <div class="bg-card" id="bg-card"></div>
+    <div class="bg-codeEdittor flex">
+      <div class="heading">Code Editor</div>
+      <h1 class="des">
+        With our online code editor, you can edit code and view the result in
+        your browser
+      </h1><div class="CE-window-div">
+      <div class="CE-window">
+        <div class="dots flex">
+          <div class="dot dot1"></div>
+          <div class="dot dot2"></div>
+
+          <div class="dot dot3"></div>
+          <h5 class="url">www.w3schools.com/tryit/</h5>
+        </div>
+        <div class="toggle-buttons">
+          <h4 class="t-button " id="frontend-toggle" onclick="Frontend()">Frontend</h4>
+          <h4 class="t-button " id="backend-toggle" onclick="Backend()">Backend</h4>
+        </div>
+        <img class="gif-img " id="img-frontend"  style="display: block;"    src="images/code.gif" />
+        <img class="gif-img " id="img-backend"  style="display: none;"   src="images/back.gif" />
+      </div><div class="btn-div">
+        <h4 class="frontend-btn">Try Frontend Editor (HTML/CSS/JS)</h4>
+        <h4 class="backend-btn">Try Backend Editor (Python/PHP/Java..)</h4>
+      </div></div>
+      
+    </div>
+    <div class="color-picker-div flex">
+      <h1 class="heading black">Color Picker</h1>
+      <h4 class="des black">W3Schools' famous color picker
+      </h4>
+      <img class="cpimage" src="images/color-picker.png"></img>
+    </div>
+    <div class="code-game-div flex">
+      <h1 class="cgheading  ">Code Game
+      </h1>
+      <h4 class="cgdes  ">Help the Lynx collect pine cones!
+      </h4>
+      <img class="cgimage" src="images/mouse.png"></img>
+      <div class="button-2 btn-4 setmargin">Play Game</div>
+    </div>
+
+    <div class="quiz-div flex">
+      <h1 class="qdheading">Exercises and Quizzes</h1>
+      <h5 class="qddes">Test your skills!</h5>
+      <div class="quiz-block flex">
+        <div class="sub-card3">
+          <div class="card-card2 btn-ex" >
+            <div class="flex">
+              <h2 class="lang-card-head" >Exercise</h2>
+            </div>
+          </div>
+        </div>
+        <div class="sub-card3">
+          <div class="card-card2 btn-qz" >
+            <div class="flex">
+              <h2 class="lang-card-head" >Quizzes</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="web-template-div flex">
+      <h3 class="wt-heading black">Web Templates
+      </h3>
+      <h4 class="wt-des black">Browse our selection of free responsive HTML Templates
+      </h4>
+      <img class="wtimage" src="images/photos.jpg"></img>
+      <div class="button-2 btn-4 wt-btn">BROWSE TEMPLATES</div>
+    </div>
+    
+
+    <div class="carrier-div">
+      <h2 class="cd-heading">Kickstart your career</h2>
+      <h4 class="cd-div"> Get certified by completing a course</h4>
+      <div class="button btn-1 cd-button">Get Started</div>
+    </div>
+    
+    <div class="bg-slideshow flex">
+      <h1 class="ss-heading black">How To Section
+      </h1>
+      <h4 class="ss-des black">Code snippets for HTML, CSS and JavaScript
+      </h4>
+      <h4 class="ss-caption black">For example, how to create a slideshow:
+
+      </h4>
+      <div class="ss-window">
+        <div class="ss-dots flex">
+          <div class="dot dot1"></div>
+          <div class="dot dot2"></div>
+
+          <div class="dot dot3"></div>
+          <h5 class="url2">www.w3schools.com/howto/</h5>
+        </div>
+        <div class="ss-img" id="ss-img">
+          <div class="image-num" id="image-num">1 / 3</div>
+          <div class="arrow-btns">
+            <div class="left-arrow" onclick="left_arrow()"> ❮ </div>
+            <div class="right-arrow" onclick="right_arrow()"> ❯ </div> 
+          </div>
+          <div class="image-caption" id="caption">Caption One</div>
+        </div>
+      
+        
+        <div class="ss-nav flex">
+          <div class="ss-dot " id="ss-dot1" onclick="ss_dot(1)"></div>
+          <div class="ss-dot " id="ss-dot2"  onclick="ss_dot(2)"></div>
+          <div class="ss-dot " id="ss-dot3"  onclick="ss_dot(3)"></div>
+        </div>
+      </div>
+<div class="stand"></div>
+<div class="button-2 btn-4 ss-btn">LEARN HOW TO</div>
+    </div>
+    -
+    <div class="page-footer">
+      <div class="easy-acess desktop">
+        <div class="courses footer-btn">Courses</div>
+        <div class="quizzes footer-btn">quizzes</div>
+        <div class="exercise footer-btn">exercises</div>
+        <div class="spaces footer-btn">spaces</div>
+          <h3 class="forum"> FORUM</h3>
+          <h3 class="about">ABOUT</h3>
+      </div>
+      <div class="easy-acess mobile">
+        <div class="courses footer-btn">Courses</div>
+        <div class="quizzes footer-btn">quizzes</div>
+        <div class="exercise footer-btn">exercises</div>
+        
+      </div>
+      <div class="easy-acess mobile">
+        
+        <div class="spaces footer-btn mob-spaces">spaces</div>
+          
+      </div>
+      <div class="easy-acess mobile">
+        
+          <h3 class="forum"> FORUM</h3>
+          <h3 class="about">ABOUT</h3>
+      </div>
+      <div class="handles">
+        <i class="fab fa-facebook-square icon"></i>
+        <i class="fab fa-instagram icon"></i>
+        <i class="fab fa-linkedin icon"></i>
+        <i class="fab fa-discord icon"></i>
+
+      </div>
+      <div class="about-div">
+        <h5 class="about-text"> W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using this site, you agree to have read and accepted our <a class="link">terms of use</a>, <a class="link">cookie and privacy policy</a>.</h5><h5 class="about-text">
+          <a class="link">Copyright 1999-2021</a> by Refsnes Data. All Rights Reserved.</h5>
+          <div class="thumbsup flex"><i class="far fa-thumbs-up" onclick="show_alert()"></i></div>
+          <div class="shop">W3SCHOOLS SHOP</div>
+      </div>
+
+    </div>
+    <div class="overlay" id="alert-overlay"> 
+      <div class="alert-box flex">
+        <img src="images/w3logo.png" class="w3logo"/>
+        <h3 class="alert-close-button" onclick="show_alert()"> close</h3>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
